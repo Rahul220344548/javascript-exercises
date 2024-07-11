@@ -6,19 +6,13 @@ const reverseString = function (word) {
     
     // reverse "hello" => "olleh"
     
-    let string = ""
-    let a;
+    let string = "";
+
     for (let i = word.length-1; i >= 0; i--) {
-        // console.log(word.charAt(i));
-        a = word.charAt(i);
-        string = string + a
+        let a = word.charAt(i);
+        string = string + a;
     }
-
-    
     return string;
-    
-
-
 };
 
 // Do not edit below this line
