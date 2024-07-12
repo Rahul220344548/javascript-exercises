@@ -1,5 +1,6 @@
 const removeFromArray = function (arr, ...manyMoreArgs) {
 
+    const newArray = [];
     
     for (const arg of manyMoreArgs) {
         const index = arr.indexOf(arg);
@@ -17,4 +18,6 @@ module.exports = removeFromArray;
 
 console.log(removeFromArray([1, 2, 3, 4], 3));
 
-console.log(removeFromArray([1, 2, 3, 4],3,2));
+console.log(removeFromArray([1, 2, 3, 4], 3, 2));
+
+console.log(removeFromArray([1, 2, 2, 3], 2));
