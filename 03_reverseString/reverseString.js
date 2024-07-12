@@ -1,21 +1,22 @@
-const reverseString = function (word) {
+const reverseString = function (string) {
+     
     
-    // Strings in JavaScript cannot be reversed directly so you're going to have
-    // to split it into something else first..do the reversal 
-    // and then join it back together into a string.
-    
-    // reverse "hello" => "olleh"
-    
-    let string = "";
 
-    for (let i = word.length-1; i >= 0; i--) {
-        let a = word.charAt(i);
-        string = string + a;
-    }
-    return string;
+    return string.split("").reverse().join("");
+
+    // for (let i = word.length-1; i >= 0; i--) {
+    //     let a = word.charAt(i);
+    //     string = string + a;
+    // }
+    // return string;
+
+    // let split_string = word.split(" ");
+    // console.log(split_string);
+    // console.log(split_string[1]);
+
 };
 
 // Do not edit below this line
 module.exports = reverseString;
 
-reverseString("hello");
+// reverseString("hello there");
